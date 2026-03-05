@@ -28,8 +28,11 @@ Project Structure
 The project is organized into separate folders to manage different types of assets efficiently:
 
 music/ → contains all MP3 audio tracks
+
 cover/ → album artwork associated with songs
+
 sqcover/ → square cover images used for UI display
+
 index.html → main webpage structure
 
 style.css → player styling and layout
