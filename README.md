@@ -7,20 +7,35 @@ The interface is designed to feel clean and intuitive. Music tracks are organize
 ⚙️ Tech Stack
 
 Frontend Technologies
+
 HTML5
+
 Used to create the structural layout of the music player, including the song list, player controls, and album artwork display.
+
 CSS3
+
 Handles the visual styling of the interface, including layout design, spacing, image presentation, and the overall aesthetic of the music player.
+
 Vanilla JavaScript
+
 Powers the interactive functionality of the player. JavaScript manages:
+
 loading and switching songs
+
 controlling audio playback
+
 updating album cover images dynamically
+
 handling user interactions such as selecting tracks
+
 Media & Assets
+
 MP3 Audio Files
+
 The songs themselves are stored locally and loaded directly into the browser’s audio player.
+
 JPG / PNG Image Assets
+
 Used for album covers and visual elements of the interface.
 
 Project Structure
