@@ -1,0 +1,149 @@
+body {
+  background: url('BG.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.main-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.vinyl-wrapper {
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  padding-left: 70px;
+  display: flex;
+  justify-content: flex-start;
+  width: 600px;
+  height: 600px;
+  margin-left: 0;
+}
+
+.vinyl-base {
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.cd-spin {
+  width: 422px;
+  height: 422px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: spin 4s linear infinite;
+  animation-play-state: paused;
+  box-shadow: 0 0 15px #D1D0CE;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Right panel */
+.player-panel {
+  width: 430px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  text-align: center;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 73%;
+  top: 79%;
+  transform: translate(-50%, -50%);
+}
+
+.album-cover {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 73%;
+  top: 31%;
+  transform: translate(-50%, -50%);
+}
+
+.play{
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh; 
+}
+
+.song-info {
+  margin-bottom: 15px;
+}
+
+#title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#artist {
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 5px;
+}
+
+.time-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  color: #eee;
+  font-size: 0.85rem;
+}
+
+.time-wrapper input[type="range"] {
+  flex: 1;
+}
+
+#progress {
+  width: 100%;
+  accent-color: #ff99cc;
+  margin: 15px 0;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.controls button:hover {
+  transform: scale(1.2);
+}

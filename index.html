@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groovify 🎧</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+
+    <div class="main-layout">
+        <div class="vinyl-wrapper">
+            <img src="player.png" class="vinyl-bass">
+            <img src="cover/enhypen_XOXO.png" class="cd-spin" id="cover">
+        </div>
+
+<div class="play">
+    <img id="album-cover" src="sqcover/XO.jpg" alt="Album Cover" class="album-cover">
+<div class="player-panel">
+    <div class="song-info">
+        <h2 id="title">XO</h2>
+        <P id="artist">Enhypen</P>
+        </div>
+        
+
+        <audio id="audio" src="music/ENHYPEN 'XO.mp3"></audio>
+
+    <div class="time-wrapper">
+  <span id="current-time">0:00</span>
+  <input type="range" id="progress" value="0">
+  <span id="duration">0:00</span>
+</div>
+
+        <div class="controls">
+            <button onclick="prevSong()">⏮</button>
+            <button onclick="togglePlay()" id="play-btn">▶</button>
+            <button onclick="nextSong()">⏭</button>
+        </div>
+</div>
+
+           </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
